@@ -1,0 +1,18 @@
+# Discrepancy targets only. Scripts must never use these as generated results.
+main_trse:
+  node_classification:
+    ogbn-arxiv: 78.46
+    ogbn-products: 86.43
+    PubMed: 92.81
+    Cora: 84.20
+  link_prediction:
+    ogbn-arxiv: 91.25
+    ogbn-products: 93.83
+    PubMed: 89.22
+    Cora: 84.90
+token_quality:
+  Cora: {edge_cut: 28.40, purity: 88.74, modularity: 68.86}
+  PubMed: {edge_cut: 64.04, purity: 90.28, modularity: 35.70}
+  ogbn-arxiv: {edge_cut: 88.98, purity: 82.58, modularity: 10.99}
+  ogbn-products: {edge_cut: 92.35, purity: 80.80, modularity: 5.95}
+

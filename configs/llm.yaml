@@ -1,0 +1,12 @@
+model: ${OPENAI_MODEL:-gpt-4o}
+temperature: 0
+top_p: 1
+max_output_tokens: 32
+max_retries: 4
+retry_base_seconds: 1.0
+nc_queries: 500
+lp_queries: 500
+pilot_queries: 50
+online_warmup: 50
+online_measured: 1000
+bootstrap_resamples: 10000

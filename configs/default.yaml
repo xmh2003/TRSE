@@ -1,0 +1,29 @@
+seed: 42
+query_seed: 2026
+rank: 8
+eta: 4.0
+gamma: 2.0
+epsilon: 1.0e-12
+sigma_rule: median_edge_distance
+macro_ratio:
+  Cora: 0.20
+  PubMed: 0.20
+  ogbn-arxiv: 0.40
+  ogbn-products: 0.40
+macro_representatives: 5
+micro_neighbor_cap: 10
+node_text_char_limit: 1600
+merge_positive_only: true
+geometry:
+  node_block_size: 4096
+  edge_block_size: 1000000
+  max_cached_rank: 16
+llm:
+  model_env: OPENAI_MODEL
+  api_key_env: OPENAI_API_KEY
+  default_model: gpt-4o
+  temperature: 0
+  top_p: 1
+  max_output_tokens: 32
+  max_retries: 4
+  retry_base_seconds: 1.0

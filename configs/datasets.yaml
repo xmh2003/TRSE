@@ -1,0 +1,31 @@
+datasets:
+  Cora:
+    source: Planetoid
+    source_name: Cora
+    expected_nodes: 2708
+    expected_edges: 5429
+    expected_features: 1433
+    expected_classes: 7
+  PubMed:
+    source: Planetoid
+    source_name: PubMed
+    expected_nodes: 19717
+    expected_edges: 44324
+    expected_features: 500
+    expected_classes: 3
+  ogbn-arxiv:
+    source: OGB
+    source_name: ogbn-arxiv
+    expected_nodes: 169343
+    expected_source_edges: 1166243
+    expected_features: 128
+    expected_classes: 40
+    symmetrize: true
+  ogbn-products:
+    source: OGB
+    source_name: ogbn-products
+    expected_nodes: 2449029
+    expected_source_edges: 61859140
+    expected_features: 100
+    expected_classes: 47
+
